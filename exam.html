@@ -10,35 +10,32 @@
       crossorigin="anonymous"
     />
 
-    <title>Document</title>
+    <title>S_S_S</title>
   </head>
   <body>
     <div class="container">
-      <h3 style="text-align: center; margin: 15px 10px">Javascript Exam</h3>
-      <div style="text-align: center">
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <button id="start" type="button">start</button>
-            <button id="stop" type="button">stop</button>
-            <button id="sort" type="button">sort</button>
-          </div>
-        </form>
-
-        <div class="contents" style="display: flex; align-items: center">
-          <table>
-            <thead>
-              <tr>
-                <th>Id</th>
-                <th>name</th>
-                <th>price</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
+      <h3>Random Start_Stop_Sort</h3>
+      <form>
+        <div class="form-group">
+          <button id="start" class="btn btn-secondary">Start</button>
+          <button id="stop" class="btn btn-secondary">Stop</button>
+          <button id="sort" class="btn btn-secondary">Sort</button>
         </div>
+      </form>
+      <div class="contents">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
     </div>
     <script src="./data/json_data.js"></script>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
