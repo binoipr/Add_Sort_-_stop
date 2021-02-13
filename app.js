@@ -12,6 +12,9 @@ function fillTable() {
         "<td>" +
         TABLE_DATA[n].name +
         "</td>" +
+        '<td><img src="' +
+        TABLE_DATA[n].imag +
+        '" /></td>' +
         "<td>" +
         TABLE_DATA[n].price +
         "</td></tr>"
