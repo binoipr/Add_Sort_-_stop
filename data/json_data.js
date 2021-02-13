@@ -8,4 +8,5 @@ const TABLE_DATA = [
   { id: "8", name: "GG", price: 9 },
   { id: "1", name: "HH", price: 5 },
   { id: "9", name: "II", price: 19 },
+  { id: "11", name: "JJ", price: 19 },
 ];

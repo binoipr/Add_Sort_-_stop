@@ -26,9 +26,23 @@ function shuffle() {
   timer = setTimeout(() => shuffle(), 1000);
 }
 
+function sortPrice(x, y) {
+  var val = y.price - x.price;
+  if (val != 0) {
+    return val;
+  }
+  return x.id - y.id;
+}
+
 window.onload = function () {
   fillTable();
   document.getElementById("stop").disabled = true;
+
+  document.getElementById("sort").onclick = () => {
+    TABLE_DATA.sort(sortPrice);
+    fillTable();
+  };
+
   document.getElementById("start").onclick = () => {
     if (isIimerOn == false) {
       isIimerOn == true;
